@@ -1,0 +1,92 @@
+.login-ui{
+    background: url('/resources/web/assets/img/background-signup.png');
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+
+.login-ui .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+.login-form {
+    position: relative;
+    width: 700px;
+    height: 80vh;
+    margin: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    text-align: center;
+    margin-top: -150px;
+}
+
+.logo{
+    width: 200px;
+    height: 100px;
+    margin: 20px;
+}
+
+.logo img{
+    width: 100%;
+    height: auto;
+}
+
+.inp-d{
+    background-color: transparent;
+    border: none;
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+
+}
+
+.firstIn .inp-d{
+    width: 47%;
+}
+
+.forgot{
+    text-align: left;
+}
+
+input:focus{
+    border-bottom: 1px solid #01D28E;
+}
+
+input{
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+
+input::placeholder{
+    color: white;
+}
+
+button{
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    border-radius: 5px;
+}
+
+button:hover{
+    background-color: white;
+    color: black;
+}
+
+@media screen and (max-width:600px) {
+    .login-form{
+        width: 500px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .login-form{
+        width: 400px;
+    }
+}
